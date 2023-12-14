@@ -43,10 +43,13 @@ body {
 }
 
 nav  {
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: #080808;
+    width: 33cm;
 }
 
 nav ul li {
