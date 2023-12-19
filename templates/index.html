@@ -62,7 +62,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <a href="/"><img src="/static/images/AHNAF.png" alt="" class="logo"></a>
+                <a href="/"><img src="/static/images/logoahnaf.png" alt="" class="logo"></a>
                 <ul>
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -134,14 +134,17 @@
                         <a href="/static/images/AhnaffCV.pdf" download class="btn btn2">Download CV</a>
                     </div>
                     <div class="contact-right">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <form name="submit-to-google-sheet" id="contactForm">
+                            <input type="text" name="Name" id="nameInput" placeholder="Name" required>
+                            <input type="email" name="Email" id="emailInput" placeholder="Email" required>
+                            <textarea name="Message" id="messageInput" rows="5" placeholder="Your Message"></textarea>
                             <span id="msg" class="pesan-sukses"></span>
-                            <button type="Submit" class="btn btn2">Submit</button>
+                            <button type="submit" class="btn btn2" id="submitBtn">
+                                <span class="loader" id="loader"></span>
+                                Submit
+                            </button>                            
                         </form>
-                    </div>
+                    </div>                    
                 </div>
             </div>
         </div>
@@ -165,6 +168,7 @@
             document.getElementById(tabname).classList.add("active-tab")
         }
     </script>
+    <!-- Function from form to spreadsheet -->
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxT2WNfmvwACN0x9jL-uHqq5UmndS9loExI009auLmpv57olcQdNH-EX1RjNGGMONzi/exec'
         const form = document.forms['submit-to-google-sheet']
@@ -174,14 +178,41 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                msg.innerHTML = "Message sent successfully"
+                msg.innerHTML = "Form submitted successfully!"
                 setTimeout(function(){
                     msg.innerHTML = ""
-                },5000)
+                },2000)
                 form.reset()
             })
             .catch(error => console.error('Error!', error.message))
         })
+      </script>
+      <!-- Function Loader Form dll -->
+      <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            var nameInput = document.getElementById('nameInput');
+            var emailInput = document.getElementById('emailInput');
+            var messageInput = document.getElementById('messageInput');
+
+            if (nameInput.value.trim() !== '' && emailInput.value.trim() !== '' && messageInput.value.trim() !== '') {
+                document.getElementById('submitBtn').classList.add('loading');
+
+                setTimeout(function() {
+                    document.getElementById('submitBtn').classList.remove('loading');
+                    document.getElementById('msg').innerText = 'Form submitted successfully!';
+                }, 3000); 
+            } else {
+                document.getElementById('msg').innerText = 'Please fill in all fields!';
+            }
+        });
+      </script>
+      <!-- Function Open Efek Animation -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.classList.add('loaded');
+        });
       </script>
   </body>
 </html>
