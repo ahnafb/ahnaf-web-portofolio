@@ -23,6 +23,7 @@ body {
 body.loaded {
     opacity: 1;
 }
+
 /* end */
 
 #header {
@@ -299,6 +300,7 @@ nav ul li a:hover::after {
     width: 100%;
 
 }
+
 form input,
 form textarea {
     width: 100%;
@@ -388,6 +390,7 @@ form btn2 {
 .btn2.loading .loader {
     display: inline-block;
 }
+
 .btn2.loading span {
     display: none;
 }
@@ -404,4 +407,53 @@ form btn2 {
     color: #ff004f;
     margin-top: -17px;
     display: block;
+}
+
+/* Projects */
+#projects {
+    padding: 30px 0;
+    cursor: default;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.projects-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    overflow: hidden;
+}
+
+.projects-list div h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+/* Read More */
+.projects-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: color 0.2s;
+}
+
+.projects-list div a:hover {
+    color: #da3b6d;
+}
+
+.projects-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
 }
