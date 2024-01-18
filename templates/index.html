@@ -35,7 +35,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@700&display=swap"
       rel="stylesheet"
-    />
+    /> 
 
     <!-- Bulma CSS -->
     <link
@@ -63,19 +63,47 @@
         <div class="container">
             <nav>
                 <a href="/"><img src="/static/images/logoahnaf.png" alt="" class="logo"></a>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-solid fa-times" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <p href="#" id="style-2" data-replace="Hola!"><span>Hello,</span></p>
-                <h1>I am <span>Ahnaf</span> Bhamakerti Arief <br>Front-End Developer</h1>
+                <h1>I am <span>Ahnaf</span> Bhamakerti Arief <br>Frontend Developer</h1>
             </div>
             <!-- <div class="image-header">
                 <img src="/static/images/selfff.png">
             </div>  -->
+        </div>
+    </div>
+        <!-- Projects -->
+    <!-- kerjain ini lagi! -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <h2>The Library</h2>
+                    <p>The Library is an online website, utilizing HTML, CSS, Flask, Bootstrap, and more, for a comprehensive and engaging literary exploration experience.</p>
+                    <a href="https://the-libraryk1.glitch.me/" target="_blank">Click here to see the website!</a>
+                </div>
+                <div>
+                    <h2>Sweeter</h2>
+                    <p>The Sweeter is a mini website project for posting tweets, akin to Twitter, implementing concepts learned in
+                        the LearningX Course.</p>
+                    <a href="https://ahnafs-sweeter.glitch.me/" target="_blank">Click here to see the website!</a>
+                </div>
+                <div>
+                    <h2>mealapp</h2>
+                    <p>MealApp is a web project presenting diverse global cuisines, dishes, recipes, and cooking styles. Let's begin on a extraoradinary culinary adventure now!</p>
+                    <a href="https://mealapp-byahnaf.glitch.me/" target="_blank">Click here to see the website!</a>
+                </div>
+            </div>
         </div>
     </div>
     <!-- About -->
@@ -84,7 +112,7 @@
             <div class="container">
                 <div class="row">
                     <div class="about-col-1" style="margin-top: 45px;">
-                        <img src="/static/images/4x6.jpg" alt="">
+                        <img src="/static/images/IMG_BATIK.JPG" alt="">
                     </div>
                     <div class="about-col-2">
                         <h1>About Me</h1>
@@ -96,7 +124,7 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Web Development</span><br>Front-End Development</li>
+                            <li><span>Web Development</span><br>Frontend Developer</li>
                             <li><span>UI/UX</span><br>Designing Web/App Interface and Wireframe</li>
                             <li><span>English</span><br>Fluent</li>
                         </ul>
@@ -105,11 +133,12 @@
                         <ul>
                             <li><span>The Library - Front-End Developer</span><br>The Library is an online library website that we created using HTML, CSS, Flask, Bootstrap, and others.</li>
                             <li><span>The Sweeter - Individual Project</span><br>The Sweeter is a mini website project for posting tweets, akin to Twitter, implementing concepts learned in the LearningX Course.</li>
+                            <li><span>mealApp - Individual Project</span><br>mealApp is a web project presenting diverse global cuisines, dishes, recipes, and cooking styles. Let's begin on a extraoradinary culinary adventure now!</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2021 - Now</span><br>Student at Universitas Negeri Semarang <br>majoring in Computer Science<br>GPA 3.58/4.00</li>
+                            <li><span>2021 - Now</span><br>Student at Universitas Negeri Semarang <br>majoring in Computer Science<br>GPA 3.64/4.00</li>
                         </ul>
                     </div>
                     </div>
@@ -117,30 +146,6 @@
             </div>
         </div>
     </div>
-    <!-- Projects -->
-    <!-- <div id="projects">
-        <div class="container">
-            <h1 class="sub-title">My Projects</h1>
-            <div class="projects-list">
-                <div>
-                    <h2>The Library</h2>
-                    <p>The Library is an online website, utilizing HTML, CSS, Flask, Bootstrap, and more, for a comprehensive and engaging literary exploration experience.</p>
-                    <a href="https://the-libraryk1.glitch.me/">Click here to see the website!</a>
-                </div>
-                <div>
-                    <h2>Sweeter</h2>
-                    <p>The Sweeter is a mini website project for posting tweets, akin to Twitter, implementing concepts learned in
-                        the LearningX Course.</p>
-                    <a href="https://ahnafs-sweeter.glitch.me/">Click here to see the website!</a>
-                </div>
-                <div>
-                    <h2>Daily Card</h2>
-                    <p>The Library is an online library website that we created using HTML, CSS, Flask, Bootstrap, and others.</p>
-                    <a href="https://personaldiary-ahnaf.glitch.me/">Click here to see the website!</a>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <!-- Contact -->
     <div class="section">
         <div id="contact">
@@ -155,7 +160,7 @@
                             <a href="https://www.linkedin.com/in/ahnafb" target="_blank"><i class="fa fa-linkedin"></i></a>
                             <a href="https://www.instagram.com/ahnsff" target="_blank"><i class="fa fa-brands fa-instagram"></i></a>
                         </div>
-                        <a href="/static/images/Ahnaf CV.pdf" download class="btn btn2">Download CV</a>
+                        <a href="/static/images/CV Ahnaf Bhamakerti Arief.pdf" download class="btn btn2">Download CV</a>
                     </div>
                     <div class="contact-right">
                         <form name="submit-to-google-sheet" id="contactForm">
@@ -237,6 +242,18 @@
         document.addEventListener('DOMContentLoaded', function () {
             document.body.classList.add('loaded');
         });
+      </script>
+
+      <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openMenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closeMenu() {
+            sidemenu.style.right = "-200px";
+        }
       </script>
   </body>
 </html>
