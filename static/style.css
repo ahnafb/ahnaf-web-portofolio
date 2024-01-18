@@ -447,12 +447,12 @@ nav .fa {
     #header {
         background-image: url(/static/images/PhoneBG.png);
     }
-    
+
     .header-text {
         margin-top: 20%;
         font-size: 16px;
     }
-    
+
     .header-text h1 {
         font-size: 36px;
     }
@@ -476,14 +476,14 @@ nav .fa {
     nav ul li {
         display: block;
         margin: 25px;
-    } 
+    }
 
     nav ul .fa {
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
-    } 
+    }
 
     /* projects */
     .projects-list {
@@ -498,7 +498,8 @@ nav .fa {
         font-size: 40px;
     }
 
-    .about-col-1, .about-col-2 {
+    .about-col-1,
+    .about-col-2 {
         flex-basis: 100%;
     }
 
@@ -517,7 +518,22 @@ nav .fa {
     }
 
     /* contact */
-    .contact-left, .contact-right {
+    .contact-left,
+    .contact-right {
         flex-basis: 100%;
-    } 
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .header-text h1 {
+        font-size: 26px;
+    }
+
+    /* projects */
+    .projects-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        grid-gap: 20px;
+        margin-top: 50px;
+    }
 }
