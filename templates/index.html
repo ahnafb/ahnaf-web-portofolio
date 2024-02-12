@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      rel="shortcut icon"
-      href="{{ url_for('static', filename='favico.ico') }}"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
     <meta property="og:title" content="Ahnaf's Website Portofolio" />
     <meta property="og:description" content="Ahnaf Bhamakerti Arief Website Portofolio" />
     <meta
       property="og:image"
-      content="{{ url_for('static', filename='ogimage.jpg') }}"
+      content="{{ url_for('static', filename='.jpg') }}"
     />
 
     <title>Ahnaf's Portofolio Website</title>
@@ -65,6 +61,7 @@
                 <a href="/"><img src="/static/images/logoahnaf.png" alt="" class="logo"></a>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -83,45 +80,57 @@
     </div>
     <!-- Skills -->
     <div class="gambaran">
-        <h1>Skills</h1>
+        <h1 id="skills">Skills</h1>
         <div class="gambaran-slide">
           <div class="gambaran-card">
-            <img src="/static/images/HTML.png" alt="" />
+            <img src="/static/images/HTML.png" alt="HTML" />
           </div>
           <div class="gambaran-card">
-            <img src="/static/images/CSS.png" alt="" />
+            <img src="/static/images/CSS.png" alt="CSS" />
           </div>
           <div class="gambaran-card">
-            <img src="/static/images/JS.png" alt="" />
+            <img src="/static/images/JS.png" alt="JavaScript" />
           </div>
           <div class="gambaran-card">
-            <img src="/static/images/jQuery.png" alt="" />
+            <img src="/static/images/jQuery.png" alt="jQuery" />
           </div>
           <div class="gambaran-card">
-            <img src="/static/images/flask.png" alt="" />
+            <img src="/static/images/flask.png" alt="Flask" />
           </div>
           <div class="gambaran-card">
-            <img src="/static/images/MONGODB.png" alt="" />
+            <img src="/static/images/MONGODB.png" alt="MongoDB" />
+          </div>
+          <div class="gambaran-card">
+            <img src="/static/images/GIT.png" alt="git" />
+          </div>
+          <div class="gambaran-card">
+            <img src="/static/images/PYTHON.jpg" alt="Python" />
           </div>
         </div>
         <div class="gambaran-slide">
           <div class="gambaran-card">
-            <img src="/static/images/HTML.png" alt="" />
+            <img src="/static/images/HTML.png" alt="HTML" />
           </div>
           <div class="gambaran-card">
-            <img src="/static/images/CSS.png" alt="" />
+            <img src="/static/images/CSS.png" alt="CSS" />
           </div>
           <div class="gambaran-card">
-            <img src="/static/images/JS.png" alt="" />
+            <img src="/static/images/JS.png" alt="JavaScript" />
           </div>
           <div class="gambaran-card">
-            <img src="/static/images/jQuery.png" alt="" />
+            <img src="/static/images/jQuery.png" alt="jQuery" />
           </div>
           <div class="gambaran-card">
-            <img src="/static/images/flask.png" alt="" />
+            <img src="/static/images/flask.png" alt="Flask" />
           </div>
           <div class="gambaran-card">
-            <img src="/static/images/MONGODB.png" alt="" />
+            <img src="/static/images/MONGODB.png" alt="MongoDB" />
+          </div>
+          <div class="gambaran-card">
+            <img src="/static/images/GIT.png" alt="git" />
+          </div>
+          <div class="gambaran-card">
+            <img src="/static/images/PYTHON.jpg" alt="Python" />
           </div>
         </div>
       </div>
@@ -152,34 +161,39 @@
     <div id="projects">
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
-            <div class="projects-list">
+              <div class="projects-list">
                 <div>
-                    <img src="/static/images/the-library-crop.png" alt="The Library Image">
-                    <h2>The Library</h2>
-                    <p>The Library is an online website, utilizing HTML, CSS, Flask, Bootstrap, and more, for a comprehensive and engaging literary exploration experience.</p>
-                    <a href="https://the-libraryk1.glitch.me/" target="_blank";">Click here to see the website!</a>
+                  <img src="/static/images/the-library-crop.png" alt="The Library Image">
+                  <h2>The Library</h2>
+                  <p>The Library is an online website, utilizing HTML, CSS, Flask, Bootstrap, and more, for a comprehensive and engaging literary exploration experience.</p>
+                  <a href="https://github.com/ZARASHIKI/Project_Library" target="_blank" class="github-code"><i class="fa fa-brands fa-github" style="padding-right: 5px;"></i>Github Code</a>
+                  <a href="https://the-libraryk1.glitch.me/" target="_blank" class="visit-website">Visit Website</a>
                 </div>
                 <div>
-                    <img src="/static/images/mealappp.jpg" alt="mealapp Image">
-                    <h2>mealapp</h2>
-                    <p>MealApp is a web project presenting diverse global cuisines, dishes, recipes, and cooking styles. Let's begin on a extraoradinary culinary adventure now!</p>
-                    <a href="https://mealapp-byahnaf.glitch.me/" target="_blank">Click here to see the website!</a>
+                  <img src="/static/images/mealappp.jpg" alt="mealapp Image">
+                  <h2>mealapp</h2>
+                  <p>MealApp is a web project presenting diverse global cuisines, dishes, recipes, and cooking styles. Let's begin on a extraoradinary culinary adventure now!</p>
+                  <a href="https://github.com/ahnafb/mealapp-ahnaf" target="_blank" class="github-code"><i class="fa fa-brands fa-github" style="padding-right: 5px;"></i>Github Code</a>
+                  <a href="https://mealapp-byahnaf.glitch.me/" target="_blank" class="visit-website">Visit Website</a>
                 </div>
-            </div>
-            <div class="projects-list">
+              </div>
+              <div class="projects-list">
                 <div>
-                    <img src="/static/images/POKEDEX.png" alt="The Library Image">
-                    <h2>Pokédex by ahnaf</h2>
-                    <p>I want to improve my skill of fetching API so I made Pokédex website with my own creativity!</p>
-                    <a href="https://ahnaf-pokedex.glitch.me/" target="_blank">Click here to see the website!</a>
+                  <img src="/static/images/POKEDEX.png" alt="The Library Image">
+                  <h2>Pokédex by ahnaf</h2>
+                  <p>I want to improve my skill of fetching API so I made Pokédex website with my own creativity! Thanks and enjoy the ride</p>
+                  <a href="https://github.com/ahnafb/jQuery-Pokedex" target="_blank" class="github-code"><i class="fa fa-brands fa-github" style="padding-right: 5px;"></i>Github Code</a>
+                  <a href="https://ahnaf-pokedex.glitch.me/" target="_blank" class="visit-website">Visit Website</a>
                 </div>
                 <div>
-                    <img src="/static/images/SWEETER.png" alt="mealapp Image">
-                    <h2>Sweeter</h2>
-                    <p>The Sweeter is a mini website project for posting tweets, akin to Twitter, implementing concepts learned in the LearningX Course.</p>
-                    <a href="https://ahnafs-sweeter.glitch.me/" target="_blank">Click here to see the website!</a>
+                  <img src="/static/images/SWEETER.png" alt="mealapp Image">
+                  <h2>Sweeter</h2>
+                  <p>The Sweeter is a mini website project for posting tweets, akin to Twitter, implementing concepts learned in the LearningX Course.</p>
+                  <a href="https://github.com/ahnafb/sweeter-project" target="_blank" class="github-code"><i class="fa fa-brands fa-github" style="padding-right: 5px;"></i>Github Code</a>
+                  <a href="https://ahnafs-sweeter.glitch.me/" target="_blank" class="visit-website">Visit Website</a>
                 </div>
-            </div>
+              </div>
+            <a href="/project" class="read-more">SEE MORE OF MY PROJECTS</a>
         </div>
     </div>
     
@@ -240,7 +254,8 @@
                         <a href="/static/images/CV Ahnaf Bhamakerti Arief.pdf" download class="btn btn2">Download CV</a>
                     </div>
                     <div class="contact-right">
-                        <form name="submit-to-google-sheet" id="contactForm">
+                      <form name="submit-to-google-sheet" id="contactForm">
+                          <h1 class="sub-title"  style="margin-top: 23px; font-size: larger;">Hi, please kindly to fill the form below. Thanks!</h1 >
                             <input type="text" name="Name" id="nameInput" placeholder="Name" required>
                             <input type="email" name="Email" id="emailInput" placeholder="Email" required>
                             <textarea name="Message" id="messageInput" rows="5" placeholder="Your Message"></textarea>

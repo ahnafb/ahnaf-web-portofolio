@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <meta property="og:title" content="Ahnaf's Website Portofolio" />
+    <meta property="og:description" content="Ahnaf Bhamakerti Arief Website Portofolio" />
+    <meta
+      property="og:image"
+      content="{{ url_for('static', filename='.jpg') }}"
+    />
+
+    <title>Ahnaf's Portofolio Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@700&display=swap"
+      rel="stylesheet"
+    /> 
+
+    <!-- Bulma CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+    <link
+      href="{{ url_for('static', filename='style.css') }}"
+      rel="stylesheet"
+    />
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+  </head>
+  <body>
+    <div id="projects">
+        <div class="container">
+            <a href="/" class="back-home">Back to Home</a>
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <img src="/static/images/the-library-crop.png" alt="The Library Image">
+                    <h2>The Library</h2>
+                    <p>The Library is an online website, utilizing HTML, CSS, Flask, Bootstrap, and more, for a comprehensive and engaging literary exploration experience.</p>
+                    <a href="https://github.com/ZARASHIKI/Project_Library" target="_blank" class="github-code"><i class="fa fa-brands fa-github" style="padding-right: 5px;"></i>Github Code</a>
+                    <a href="https://the-libraryk1.glitch.me/" target="_blank" class="visit-website">Visit Website</a>
+                </div>
+                <div>
+                    <img src="/static/images/mealappp.jpg" alt="mealapp Image">
+                    <h2>mealapp</h2>
+                    <p>MealApp is a web project presenting diverse global cuisines, dishes, recipes, and cooking styles. Let's begin on a extraoradinary culinary adventure now!</p>
+                    <a href="https://github.com/ahnafb/mealapp-ahnaf" target="_blank" class="github-code"><i class="fa fa-brands fa-github" style="padding-right: 5px;"></i>Github Code</a>
+                    <a href="https://mealapp-byahnaf.glitch.me/" target="_blank" class="visit-website">Visit Website</a>
+                </div>
+            </div>
+            <div class="projects-list">
+                <div>
+                    <img src="/static/images/POKEDEX.png" alt="The Library Image">
+                    <h2>Pokédex by ahnaf</h2>
+                    <p>I want to improve my skill of fetching API so I made Pokédex website with my own creativity! Thanks and enjot the ride!</p>
+                    <a href="https://github.com/ahnafb/jQuery-Pokedex" target="_blank" class="github-code"><i class="fa fa-brands fa-github" style="padding-right: 5px;"></i>Github Code</a>
+                    <a href="https://ahnaf-pokedex.glitch.me/" target="_blank" class="visit-website">Visit Website</a>
+                </div>
+                <div>
+                    <img src="/static/images/SWEETER.png" alt="mealapp Image">
+                    <h2>Sweeter</h2>
+                    <p>The Sweeter is a mini website project for posting tweets, akin to Twitter, implementing concepts learned in the LearningX Course.</p>
+                    <a href="https://github.com/ahnafb/sweeter-project" target="_blank" class="github-code"><i class="fa fa-brands fa-github" style="padding-right: 5px;"></i>Github Code</a>
+                    <a href="https://ahnafs-sweeter.glitch.me/" target="_blank" class="visit-website">Visit Website</a>
+                </div>
+            </div>
+            <div class="projects-list">
+                <div>
+                    <img src="/static/images/BABYEAT.png" alt="The Library Image">
+                    <h2>Sambal Baby Eat</h2>
+                    <p>Supporting my friend's micro-business by creating a website as a platform for sharing information and promotion of their products.</p>
+                    <a href="https://github.com/ahnafb/BabyEat" target="_blank" class="github-code"><i class="fa fa-brands fa-github" style="padding-right: 5px;"></i>Github Code</a>
+                    <a href="https://baby-eat.glitch.me/" target="_blank" class="visit-website">Visit Website</a>
+                </div>
+                <div>
+                    <img src="/static/images/HOMEPAGE.png" alt="mealapp Image">
+                    <h2>The Library Wireframe (Figma)</h2>
+                    <p>In addition to my frontend tasks, I was also assigned the task of designing the low-fidelity of The Library Project website.</p>
+                    <a href="https://www.figma.com/file/xCAI1zCXYkv5Z0ChnWfZzi/The-Library---LX-Project?type=design&node-id=44%3A1084&mode=design&t=5P7QIFTOBWMo7WHY-1" target="_blank" class="github-code"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" style="margin-right: 5px;"><path fill="currentColor" d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491M12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539m-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019c1.705 0 3.093-1.376 3.093-3.068v-2.97zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49m-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019z"/></svg>Visit Figma Design</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contact -->
+    <div class="section">
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa fa-solid fa-envelope"></i>ahnafbnf@gmail.com</p>
+                        <p><i class="fa fa-solid fa-phone"></i>+62 812 9249 5783</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/ahnafb" target="_blank"><i class="fa fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/ahnafb" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/ahnsff" target="_blank"><i class="fa fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="/static/images/CV Ahnaf Bhamakerti Arief.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet" id="contactForm">
+                            <input type="text" name="Name" id="nameInput" placeholder="Name" required>
+                            <input type="email" name="Email" id="emailInput" placeholder="Email" required>
+                            <textarea name="Message" id="messageInput" rows="5" placeholder="Your Message"></textarea>
+                            <span id="msg" class="pesan-sukses"></span>
+                            <button type="submit" class="btn btn2" id="submitBtn">
+                                <span class="loader" id="loader"></span>
+                                Submit
+                            </button>                            
+                        </form>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="kaki">
+        <p>Property of Ahnaf</p>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <!-- Function from form to spreadsheet -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxT2WNfmvwACN0x9jL-uHqq5UmndS9loExI009auLmpv57olcQdNH-EX1RjNGGMONzi/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Form submitted successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },2000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <!-- Function Loader Form dll -->
+      <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            var nameInput = document.getElementById('nameInput');
+            var emailInput = document.getElementById('emailInput');
+            var messageInput = document.getElementById('messageInput');
+
+            if (nameInput.value.trim() !== '' && emailInput.value.trim() !== '' && messageInput.value.trim() !== '') {
+                document.getElementById('submitBtn').classList.add('loading');
+
+                setTimeout(function() {
+                    document.getElementById('submitBtn').classList.remove('loading');
+                    document.getElementById('msg').innerText = 'Form submitted successfully!';
+                }, 3000); 
+            } else {
+                document.getElementById('msg').innerText = 'Please fill in all fields!';
+            }
+        });
+      </script>
+      <!-- Function Open Efek Animation -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.classList.add('loaded');
+        });
+      </script>
+
+      <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openMenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closeMenu() {
+            sidemenu.style.right = "-200px";
+        }
+      </script>
+  </body>
+</html>

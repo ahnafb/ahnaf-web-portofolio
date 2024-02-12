@@ -333,6 +333,7 @@ form btn2 {
 .sub-title {
     font-size: 23px;
     font-weight: normal;
+    margin-top: 10px;
 }
 
 .btn.btn2 {
@@ -445,6 +446,47 @@ form btn2 {
     background: #ff004f;
     transform: translateY(-10px);
 }
+/* ///// */
+
+.back-home {
+    color: #ff004f;
+    font-size: large;
+}
+
+/* DUA TOMBOL PROJEK */
+.github-code {
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 6px;
+    background: #ff4c85;
+}
+
+.visit-website {
+    padding: 10px;
+    border-radius: 5px;
+    background: #ff4c85;
+}
+
+.read-more {
+    width: 100%;
+    margin-top: 25px;
+    font-weight: normal;
+    display: inline-block;
+    background: #ff4c85;
+    padding: 14px 50px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: #080808;
+    border-radius: 7px;
+    transition: box-shadow 0.3s ease; /* Transisi efek glowing */
+    box-shadow: 0 0 15px 0 rgba(255, 0, 79, 0.7); /* Efek glowing awal */
+}
+
+.read-more:hover {
+    opacity: 0.95;
+    box-shadow: 0 0 20px 5px rgba(255, 0, 79, 0.7); /* Efek glowing saat hover */
+}
 
 /*  */
 nav .fa {
@@ -459,7 +501,7 @@ nav .fa {
     }
 
     to {
-        transform: translateX(-60%);
+        transform: translateX(-100%);
     }
 }
 
@@ -480,13 +522,13 @@ nav .fa {
 }
 
 .gambaran-slide {
-    animation: 12s slide infinite linear;
+    animation: 10s slide infinite linear;
     display: inline-block;
 }
 
 .gambaran-card {
-    width: 240px;
-    height: 240px;
+    width: 220px;
+    height: 220px;
     background-color: #fff;
     border-radius: 10px;
     margin: 0 10px;
@@ -577,7 +619,9 @@ nav .fa {
     }
 
     /* contact */
-    .contact-left,
+    .contact-left {
+        flex-basis: 100%;
+    }
     .contact-right {
         flex-basis: 100%;
     }
